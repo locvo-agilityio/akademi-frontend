@@ -12,8 +12,8 @@ exports[`CardFood component should render correctly with default props 1`] = `
         class="css-6qtbr6"
       >
         <img
-          alt="Dan Abramov"
-          class="chakra-image css-d7vuui"
+          alt="Food Image"
+          class="chakra-image css-66zpz9"
         />
       </div>
     </div>

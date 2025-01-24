@@ -194,11 +194,11 @@ exports[`Dashboard should render successfully 1`] = `
                       class="chakra-avatar css-wbs104"
                     >
                       <div
-                        aria-label="John Doe"
+                        aria-label="https://bit.ly/dan-abramov"
                         class="chakra-avatar__initials css-0"
                         role="img"
                       >
-                        JD
+                        h
                       </div>
                     </span>
                     John
@@ -340,11 +340,11 @@ exports[`Dashboard should render successfully 1`] = `
                       class="chakra-avatar css-wbs104"
                     >
                       <div
-                        aria-label="Davis Ngo"
+                        aria-label="https://bit.ly/dan-abramov"
                         class="chakra-avatar__initials css-0"
                         role="img"
                       >
-                        DN
+                        h
                       </div>
                     </span>
                     Davis
@@ -486,11 +486,11 @@ exports[`Dashboard should render successfully 1`] = `
                       class="chakra-avatar css-wbs104"
                     >
                       <div
-                        aria-label="Jonathan Tah"
+                        aria-label="https://bit.ly/dan-abramov"
                         class="chakra-avatar__initials css-0"
                         role="img"
                       >
-                        JT
+                        h
                       </div>
                     </span>
                     Jonathan
@@ -632,11 +632,11 @@ exports[`Dashboard should render successfully 1`] = `
                       class="chakra-avatar css-wbs104"
                     >
                       <div
-                        aria-label="Edward Johnson"
+                        aria-label="https://bit.ly/dan-abramov"
                         class="chakra-avatar__initials css-0"
                         role="img"
                       >
-                        EJ
+                        h
                       </div>
                     </span>
                     Edward
@@ -778,11 +778,11 @@ exports[`Dashboard should render successfully 1`] = `
                       class="chakra-avatar css-wbs104"
                     >
                       <div
-                        aria-label="William Smith"
+                        aria-label="https://bit.ly/dan-abramov"
                         class="chakra-avatar__initials css-0"
                         role="img"
                       >
-                        WS
+                        h
                       </div>
                     </span>
                     William

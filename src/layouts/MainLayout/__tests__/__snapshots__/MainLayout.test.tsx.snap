@@ -671,8 +671,8 @@ exports[`MainLayout should render successfully 1`] = `
                 class="css-6qtbr6"
               >
                 <img
-                  alt="Dan Abramov"
-                  class="chakra-image css-d7vuui"
+                  alt="Food Image"
+                  class="chakra-image css-66zpz9"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQPUcFz7CxVScB-zxL5pl2w6f4ntjw4mV-w&s"
                 />
               </div>
@@ -702,8 +702,8 @@ exports[`MainLayout should render successfully 1`] = `
                 class="css-6qtbr6"
               >
                 <img
-                  alt="Dan Abramov"
-                  class="chakra-image css-d7vuui"
+                  alt="Food Image"
+                  class="chakra-image css-66zpz9"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQPUcFz7CxVScB-zxL5pl2w6f4ntjw4mV-w&s"
                 />
               </div>
