@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField component Render correctly with default props 1`] = `
+<div>
+  <div
+    class="chakra-form-control css-0"
+    role="group"
+  >
+    <label
+      class="chakra-form__label css-1hm3o85"
+      for="field-:r0:"
+      id="field-:r0:-label"
+    >
+      Email
+    </label>
+    <input
+      class="chakra-input css-1lx593h"
+      id="field-:r0:"
+      name="email"
+      placeholder="Email"
+    />
+  </div>
+</div>
+`;

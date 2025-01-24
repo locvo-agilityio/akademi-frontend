@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teacher should render successfully 1`] = `
+<div>
+  <div
+    class="chakra-stack css-tl3ftk"
+  >
+    <div
+      class="chakra-stack css-1vi21nj"
+    >
+      <div
+        class="chakra-input__group css-29d2s5"
+        data-group="true"
+      >
+        <input
+          class="chakra-input css-0"
+          placeholder="Search here..."
+          type="text"
+          value=""
+        />
+        <div
+          class="chakra-input__left-element css-d9lws8"
+        >
+          <svg
+            class="chakra-icon css-1vp16hi"
+            fill="none"
+            focusable="false"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M23.6 21.8001L18 16.2001C19.3 14.5001 20.1 12.4001 20.1 10.1001C20.1 4.6001 15.6 0.100098 10.1 0.100098C4.6 0.100098 0 4.6001 0 10.1001C0 15.6001 4.5 20.1001 10 20.1001C12.3 20.1001 14.5 19.3001 16.2 17.9001L21.8 23.5001C22 23.7001 22.4 23.9001 22.7 23.9001C23 23.9001 23.3 23.8001 23.6 23.5001C24.1 23.1001 24.1 22.3001 23.6 21.8001ZM2.5 10.1001C2.5 6.0001 5.9 2.6001 10 2.6001C14.1 2.6001 17.5 6.0001 17.5 10.1001C17.5 14.2001 14.1 17.6001 10 17.6001C5.9 17.6001 2.5 14.3001 2.5 10.1001Z"
+              fill="#4D44B5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="css-ffmerx"
+      >
+        <div
+          class="chakra-select__wrapper css-1aeevpm"
+        >
+          <select
+            class="chakra-select css-1rrco7x"
+            title="Sort"
+          >
+            <option
+              selected=""
+              value="desc"
+            >
+              Descending
+            </option>
+            <option
+              value="asc"
+            >
+              Ascending
+            </option>
+          </select>
+          <div
+            class="chakra-select__icon-wrapper css-162mkon"
+          >
+            <div
+              aria-hidden="true"
+              class="chakra-select__icon css-fpx4h3"
+              focusable="false"
+              role="presentation"
+              style="width: 1em; height: 1em; color: currentColor;"
+            >
+              <svg
+                class="chakra-icon css-1rv9bzt"
+                fill="none"
+                focusable="false"
+                height="14"
+                viewBox="0 0 21 14"
+                width="21"
+              >
+                <path
+                  d="M20.6761 2.48803L11.2361 12.952C10.8521 13.4 10.1481 13.4 9.76415 12.952L0.324149 2.48803C-0.283851 1.81603 0.164149 0.728027 1.06015 0.728027L19.9401 0.728027C20.8361 0.728027 21.2841 1.81603 20.6761 2.48803Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <a
+          class="chakra-button css-1nhnjhl"
+          href="/teachers/add-new-teacher"
+          title="New Teacher"
+        >
+          <svg
+            fill="none"
+            height="17"
+            viewBox="0 0 17 17"
+            width="17"
+          >
+            <path
+              d="M6.34703 10.6647H0.382324V6.42941H6.34703V0.5H10.5823V6.42941H16.6176V10.6647H10.5823V16.6647H6.34703V10.6647Z"
+              fill="currentColor"
+            />
+          </svg>
+           New Teacher
+        </a>
+      </div>
+    </div>
+    <div
+      class="css-tkevr6"
+    >
+      <div
+        class="chakra-spinner css-1y7joxr"
+        title="Fallback"
+      >
+        <span
+          class="css-8b45rq"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

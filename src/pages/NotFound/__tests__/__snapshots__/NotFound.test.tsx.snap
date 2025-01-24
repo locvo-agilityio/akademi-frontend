@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound should render successfully 1`] = `
+<div>
+  <div
+    class="chakra-stack css-2ohuy8"
+  >
+    <p
+      class="chakra-text css-0"
+    >
+      Page Not Found
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableStudent Component Should match snapshot 1`] = `
+<div>
+  <div
+    class="chakra-table__container css-cvn5rz"
+  >
+    <table
+      class="chakra-table css-0"
+    >
+      <thead
+        class="css-0"
+      >
+        <tr
+          class="css-0"
+        >
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="Name"
+            >
+              Name
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="ID"
+            >
+              ID
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="Date"
+            >
+              Date
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="Parent Name"
+            >
+              Parent Name
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="City"
+            >
+              City
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="Contact"
+            >
+              Contact
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="Grade"
+            >
+              Grade
+            </p>
+          </th>
+          <th
+            class="css-1fjmdth"
+          >
+            <p
+              class="chakra-text css-19uym76"
+              title="Action"
+            >
+              Action
+            </p>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="css-0"
+      >
+        <tr
+          class="css-0"
+        >
+          <td
+            class="css-1g7ry2m"
+          >
+            <td
+              class="css-8faws7"
+            >
+              <span
+                class="chakra-avatar css-1ruhx4w"
+              >
+                <div
+                  aria-label="John Doe"
+                  class="chakra-avatar__initials css-0"
+                  role="img"
+                >
+                  JD
+                </div>
+              </span>
+              <p
+                class="chakra-text css-tbw3nr"
+              >
+                John
+                 
+                Doe
+              </p>
+            </td>
+          </td>
+          <td
+            class="css-1g7ry2m"
+          >
+            1
+          </td>
+          <td
+            class="css-1g7ry2m"
+          >
+            2022-01-01
+          </td>
+          <td
+            class="css-1g7ry2m"
+          >
+            John Doe
+          </td>
+          <td
+            class="css-1g7ry2m"
+          >
+            New York
+          </td>
+          <td
+            class="css-1g7ry2m"
+          >
+            1234567890
+          </td>
+          <td
+            class="css-1g7ry2m"
+          >
+            A
+          </td>
+          <td
+            class="css-1g7ry2m"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
