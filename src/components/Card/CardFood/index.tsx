@@ -20,9 +20,10 @@ const CardFood = ({ name, content, image = '' }: CardFoodProps) => (
         <Image
           w="full"
           h="full"
+          objectFit="cover"
           borderRadius="lg"
           src={image}
-          alt="Dan Abramov"
+          alt="Food Image"
         />
       </Box>
     </CardHeader>

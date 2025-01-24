@@ -52,8 +52,8 @@ const TableUnpaidStudent = () => {
             <Avatar
               size="md"
               mr={6}
-              name={`${firstName} ${lastName}`}
-              src={avatar as string}
+              name={String(avatar)}
+              src={String(avatar)}
             />
             {firstName} {lastName}
           </Flex>
