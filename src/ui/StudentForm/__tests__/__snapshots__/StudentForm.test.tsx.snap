@@ -215,7 +215,7 @@ exports[`StudentForm renders snapshot with default values 1`] = `
               class="chakra-input css-172mybz"
               id="field-:r8:"
               name="phone"
-              placeholder="Please enter your phone"
+              placeholder="(xxx) xxx-xxxx"
               type="text"
               value="2345678901"
             />
@@ -232,7 +232,7 @@ exports[`StudentForm renders snapshot with default values 1`] = `
               Class *
             </label>
             <div
-              class="chakra-radio-group css-uzxjvg"
+              class="chakra-radio-group css-30exxc"
               role="radiogroup"
             >
               <label
@@ -441,7 +441,7 @@ exports[`StudentForm renders snapshot with default values 1`] = `
               class="chakra-input css-172mybz"
               id="field-:ri:"
               name="parent.phone"
-              placeholder="Please enter your phone"
+              placeholder="(xxx) xxx-xxxx"
               type="text"
               value="2345678901"
             />

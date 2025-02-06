@@ -1,4 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
 import { Meta, StoryObj } from '@storybook/react';
 import { Text } from '@chakra-ui/react';
 
@@ -8,13 +7,6 @@ import CustomModal from '.';
 const meta: Meta<typeof CustomModal> = {
   title: 'Components/CustomModal',
   component: CustomModal,
-  decorators: [
-    (Story) => (
-      <BrowserRouter>
-        <Story />
-      </BrowserRouter>
-    ),
-  ],
 };
 
 export default meta;

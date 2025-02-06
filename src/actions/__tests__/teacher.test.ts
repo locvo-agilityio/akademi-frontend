@@ -32,7 +32,7 @@ describe('Teacher Actions', () => {
       search: 'test',
       sort: 'asc',
     };
-    const search = `&filters[email][$contains]=${filter.search}`;
+    const search = `&filters[fullName][$contains]=${filter.search}`;
     const sort = `&sort=createdAt:${filter.sort}`;
 
     (apiRequest as jest.Mock).mockResolvedValue(MOCK_TEACHERS);
@@ -145,6 +145,7 @@ describe('Teacher Actions', () => {
       startEducation: 'startEducation-value',
       subject: 'subject-value',
       university: 'university-value',
+      fullName: 'firstName-value lastName-value',
       schedule: MOCK_TEACHER_SCHEDULES,
     };
 
@@ -189,6 +190,7 @@ describe('Teacher Actions', () => {
       expertise: 'expertise-value',
       photo: 'photo-value',
       startEducation: 'startEducation-value',
+      fullName: 'firstName-value lastName-value',
       subject: 'subject-value',
       university: 'university-value',
       schedule: MOCK_TEACHER_SCHEDULES,

@@ -24,7 +24,7 @@ export const getTeachers = async ({
   queryKey: [{ page, filter }],
 }: QueryFunctionContext<ReturnType<(typeof teachersQueryKeys)['list']>>) => {
   const search = filter?.search
-    ? `&filters[email][$contains]=${filter.search}`
+    ? `&filters[fullName][$contains]=${filter.search}`
     : '';
 
   const sort = filter?.sort ? `&sort=createdAt:${filter.sort}` : '';
@@ -48,6 +48,7 @@ export const addTeacher = async (_: unknown, formData: FormData) => {
       teacherKeys.map((key) => [key, formData.get(key) as string]),
     ) as unknown as ITeacher),
     schedule: MOCK_TEACHER_SCHEDULES,
+    fullName: `${formData.get('firstName') as string} ${formData.get('lastName') as string}`,
   };
 
   return await apiRequest(HTTP_METHOD.POST, API_PATHS.TEACHERS, {
@@ -64,6 +65,7 @@ export const editTeacher = async (_: unknown, formData: FormData) => {
       teacherKeys.map((key) => [key, formData.get(key) as string]),
     ) as unknown as ITeacher),
     schedule: MOCK_TEACHER_SCHEDULES,
+    fullName: `${formData.get('firstName') as string} ${formData.get('lastName') as string}`,
   };
 
   return await apiRequest(HTTP_METHOD.PUT, url, {

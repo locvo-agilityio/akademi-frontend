@@ -3,8 +3,10 @@ import { ISchedule } from './schedule';
 export interface ITeacher {
   id?: number;
   documentId?: string;
+  name?: string;
   firstName: string;
   lastName: string;
+  fullName?: string;
   email: string;
   phone: string;
   address: string;

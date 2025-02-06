@@ -1,4 +1,4 @@
-import { memo, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import {
   Modal,
   ModalBody,
@@ -42,4 +42,4 @@ const CustomModal = ({
   </Modal>
 );
 
-export default memo(CustomModal);
+export default CustomModal;

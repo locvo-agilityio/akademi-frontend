@@ -15,7 +15,7 @@ jest.mock('react-router-dom', () => ({
 }));
 
 jest.mock('@/hooks', () => ({
-  useGetTeacher: jest.fn(() => ({
+  useGetTeachers: jest.fn(() => ({
     students: {
       data: MOCK_TEACHERS,
       meta: {

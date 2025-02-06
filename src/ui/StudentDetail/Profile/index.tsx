@@ -1,4 +1,3 @@
-import { memo } from 'react';
 import { Avatar, Box, Flex, Image, Text, VStack } from '@chakra-ui/react';
 
 // Images
@@ -46,7 +45,7 @@ const Profile = ({
         alt="Background Student"
       />
 
-      <Box position="absolute" maxW={200} top="50%" left={8} w="full">
+      <Box position="absolute" top="50%" left={8} w="full">
         <Flex
           w={160}
           h={160}
@@ -76,4 +75,4 @@ const Profile = ({
   </VStack>
 );
 
-export default memo(Profile);
+export default Profile;

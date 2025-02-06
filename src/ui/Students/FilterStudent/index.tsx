@@ -22,7 +22,7 @@ interface IFilterStudentProps {
 
 const FilterStudent = ({ filterOptions }: IFilterStudentProps) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const deferredQuery = useDeferredValue(searchParams.get('search') || '');
+  const deferredQuery = useDeferredValue(searchParams.get('search'), '');
 
   const handleSearch = (value: string) => {
     if (value) {
@@ -48,7 +48,7 @@ const FilterStudent = ({ filterOptions }: IFilterStudentProps) => {
 
   return (
     <HStack w="full" justifyContent="space-between" mt={10}>
-      <SearchBox defaultValue={deferredQuery} onChange={handleSearch} />
+      <SearchBox defaultValue={deferredQuery || ''} onChange={handleSearch} />
 
       <Flex gap={6}>
         <Select
@@ -63,6 +63,7 @@ const FilterStudent = ({ filterOptions }: IFilterStudentProps) => {
           w={207}
           h="56px"
           borderRadius="full"
+          cursor="pointer"
           pl={6}
           onChange={handleSort}
         >

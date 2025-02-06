@@ -3,7 +3,7 @@ export const ERROR_MESSAGES = {
   MAX_SIZE_IMAGE: 'Image size must be less than 3MB',
   INVALID_FILE_TYPE: 'File must be a PNG, JPEG, or JPG',
   FIELD_REQUIRED: (fieldName: string) => `${fieldName} is required`,
-  INVALID_PHONE: 'Please enter a phone number format like +1 xxx-xxx-xxxx',
+  INVALID_PHONE: 'Invalid US phone number format',
   INVALID_EMAIL: 'Please enter a valid email address',
   INVALID_MIN_LENGTH: 'Please enter at least 2 characters',
   INVALID_UPPERCASE_FIRST_LETTER: 'The first letter must be uppercase',

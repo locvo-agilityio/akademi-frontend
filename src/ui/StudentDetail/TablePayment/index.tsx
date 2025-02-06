@@ -19,7 +19,7 @@ import { formatAmount, formatDate } from '@/utils';
 import { useGetUnpaidStudents, usePagination } from '@/hooks';
 
 // Constants
-import { DEFAULT_PAGE, PAGE_SIZE } from '@/constants';
+import { DEFAULT_PAGE } from '@/constants';
 
 // Mocks
 import { MOCK_PAYMENTS } from '@/__mocks__';
@@ -131,7 +131,6 @@ const TablePayment = () => {
           isDisableNext={isDisableNext}
           isDisabledPrev={isDisablePrev}
           totalRecords={`${unpaidStudents?.meta.pagination.total ?? 0} items`}
-          pageSize={PAGE_SIZE}
           currentButtons={pageArray}
           currentPage={currentPage}
           onClickPage={handleChangePageNumber}

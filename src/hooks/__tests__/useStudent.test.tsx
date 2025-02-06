@@ -1,5 +1,9 @@
 import { ReactNode } from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQueryClient,
+} from '@tanstack/react-query';
 import { renderHook, waitFor } from '@testing-library/react';
 
 // Actions
@@ -21,6 +25,9 @@ import {
 // Mocks
 import { MOCK_STUDENTS, MOCK_UNPAID_STUDENTS } from '@/__mocks__';
 
+// Constants
+import { studentsQueryKeys } from '@/constants';
+
 const mockFetch = jest.fn().mockResolvedValue({
   json: jest.fn().mockResolvedValue({}),
 });
@@ -34,6 +41,16 @@ jest.mock('@/actions', () => ({
   getStudent: jest.fn(),
 }));
 
+jest.mock('@tanstack/react-query', () => ({
+  ...jest.requireActual('@tanstack/react-query'),
+  useQueryClient: jest.fn(),
+}));
+
+const mockQueryClient = {
+  getQueriesData: jest.fn(),
+  invalidateQueries: jest.fn(),
+};
+
 describe('useStudent', () => {
   const queryClient = new QueryClient();
 
@@ -42,6 +59,10 @@ describe('useStudent', () => {
   );
 
   beforeEach(() => {
+    (useQueryClient as jest.Mock).mockReturnValue(mockQueryClient);
+  });
+
+  afterEach(() => {
     jest.clearAllMocks();
   });
 
@@ -92,6 +113,14 @@ describe('useStudent', () => {
   });
 
   it('should fetch student detail using the provided id', async () => {
+    mockQueryClient.getQueriesData.mockReturnValue([
+      [
+        studentsQueryKeys.lists(),
+        {
+          data: MOCK_STUDENTS,
+        },
+      ],
+    ]);
     (getStudent as jest.Mock).mockResolvedValue(MOCK_STUDENTS[0]);
 
     const { result } = renderHook(

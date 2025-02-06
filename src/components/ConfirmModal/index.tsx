@@ -1,5 +1,3 @@
-import { memo } from 'react';
-
 // Components
 import { Button, Flex, HStack, Text } from '@chakra-ui/react';
 
@@ -55,4 +53,4 @@ const ConfirmModal = ({
   </Flex>
 );
 
-export default memo(ConfirmModal);
+export default ConfirmModal;

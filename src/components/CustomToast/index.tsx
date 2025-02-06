@@ -1,5 +1,4 @@
 import { Flex } from '@chakra-ui/react';
-import { memo } from 'react';
 
 // Constants
 import { TOAST_STATUS } from '@/constants';
@@ -21,4 +20,4 @@ const CustomToast = ({ status, message }: ICustomToastProps) => (
   </Flex>
 );
 
-export default memo(CustomToast);
+export default CustomToast;

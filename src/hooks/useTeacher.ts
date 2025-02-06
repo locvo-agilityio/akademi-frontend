@@ -5,6 +5,7 @@ import { teachersQueryKeys } from '@/constants';
 
 // Actions
 import { deleteTeacher, getTeacher, getTeachers } from '@/actions';
+import { ITeacher, ITeachers } from '@/types';
 
 export const useGetTeachers = ({
   page,
@@ -22,10 +23,23 @@ export const useGetTeachers = ({
 };
 
 export const useGetTeacher = (id: string) => {
+  const queryClient = useQueryClient();
+
+  const cachedTeachers = queryClient.getQueriesData({
+    queryKey: teachersQueryKeys.lists(),
+  });
+
+  const allTeachers = cachedTeachers.flatMap(([_, data]) => data ?? []);
+
+  const initialTeachers = (allTeachers[0] as ITeachers)?.data.find(
+    (teacher) => teacher.documentId === id,
+  );
+
   const { data: teacher, isFetching: isTeacherLoading } = useQuery({
     queryKey: teachersQueryKeys.detail(id),
     queryFn: getTeacher,
     enabled: !!id,
+    placeholderData: { data: initialTeachers as ITeacher },
   });
 
   return { teacher, isTeacherLoading };

@@ -68,18 +68,8 @@ exports[`CardTeacher component should render correctly with default props 1`] = 
           <a
             class="chakra-menu__menuitem css-1dzc0uv"
             data-index="0"
-            href="/teachers/1"
-            id="menu-list-:r1:-menuitem-:r2:"
-            role="menuitem"
-            tabindex="-1"
-          >
-            Detail
-          </a>
-          <a
-            class="chakra-menu__menuitem css-1dzc0uv"
-            data-index="1"
             href="/teachers/edit/1"
-            id="menu-list-:r1:-menuitem-:r3:"
+            id="menu-list-:r1:-menuitem-:r2:"
             role="menuitem"
             tabindex="-1"
           >
@@ -87,10 +77,10 @@ exports[`CardTeacher component should render correctly with default props 1`] = 
           </a>
           <button
             class="chakra-menu__menuitem css-1f187mo"
-            data-email="K5K3x@example.com"
             data-id="1"
-            data-index="2"
-            id="menu-list-:r1:-menuitem-:r4:"
+            data-index="1"
+            data-name="Dimitres Viga"
+            id="menu-list-:r1:-menuitem-:r3:"
             role="menuitem"
             tabindex="-1"
             type="button"

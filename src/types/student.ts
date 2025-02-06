@@ -3,6 +3,7 @@ import { ISchedule } from './schedule';
 export interface IStudent {
   id?: number;
   documentId?: string;
+  name?: string;
   firstName: string;
   lastName: string;
   email: string;

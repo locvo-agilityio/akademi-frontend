@@ -8,7 +8,6 @@ import { ArrowIcon } from '../icons';
 
 interface PaginationProps {
   totalRecords?: string;
-  pageSize?: number;
   currentPage?: number;
   isDisabledPrev?: boolean;
   isDisableNext?: boolean;

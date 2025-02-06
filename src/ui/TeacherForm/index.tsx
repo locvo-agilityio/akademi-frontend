@@ -14,6 +14,9 @@ import {
 
 // Constants
 import {
+  ADDITIONAL_TEACHER_INFO,
+  BASIC_TEACHER_INFO,
+  EDUCATION_TEACHER_INFO,
   ERROR_MESSAGES,
   PUBLIC_ROUTERS,
   SUCCESS_MESSAGES,
@@ -24,13 +27,6 @@ import {
 
 // Types
 import { ITeacher } from '@/types';
-
-// Utils
-import {
-  ADDITIONAL_TEACHER_INFO,
-  BASIC_TEACHER_INFO,
-  EDUCATION_TEACHER_INFO,
-} from '@/utils';
 
 // Actions
 import { addTeacher, editTeacher } from '@/actions';

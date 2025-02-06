@@ -11,7 +11,6 @@ describe('Pagination render', () => {
   it('Should match snapshot.', () => {
     const { container } = render(
       <Pagination
-        pageSize={10}
         currentPage={1}
         isDisableNext={true}
         isDisabledPrev={true}
@@ -24,7 +23,7 @@ describe('Pagination render', () => {
 
   it('Handle click page', async () => {
     const { getByTitle } = render(
-      <Pagination pageSize={10} onPageChange={onPageChangeMock} />,
+      <Pagination onPageChange={onPageChangeMock} />,
     );
 
     const nextPage = getByTitle('next-button');
@@ -35,7 +34,7 @@ describe('Pagination render', () => {
 
   it('Handle next page', async () => {
     const { getByTitle } = render(
-      <Pagination pageSize={8} onPageChange={onPageChangeMock} />,
+      <Pagination onPageChange={onPageChangeMock} />,
     );
 
     const nextPage = getByTitle('next-button');
@@ -47,7 +46,6 @@ describe('Pagination render', () => {
   it('Handle click number page', async () => {
     const { getByTitle } = render(
       <Pagination
-        pageSize={10}
         currentPage={1}
         isDisableNext={true}
         isDisabledPrev={true}
@@ -64,11 +62,7 @@ describe('Pagination render', () => {
 
   it('Handle prev page', async () => {
     const { getByTitle } = render(
-      <Pagination
-        pageSize={8}
-        currentPage={2}
-        onPageChange={onPageChangeMock}
-      />,
+      <Pagination currentPage={2} onPageChange={onPageChangeMock} />,
     );
 
     const nextPage = getByTitle('prev-button');

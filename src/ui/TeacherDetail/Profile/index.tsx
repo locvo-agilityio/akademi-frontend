@@ -1,6 +1,5 @@
 'use client';
 
-import { memo } from 'react';
 import { Avatar, Box, Flex, Image, Text, VStack } from '@chakra-ui/react';
 
 // Images
@@ -65,7 +64,7 @@ const ProfileTeacher = ({
         alt="Background Student"
       />
 
-      <Box position="absolute" maxW={200} top="50%" left={8} w="full">
+      <Box position="absolute" top="50%" left={8} w="full">
         <Flex
           w={160}
           h={160}
@@ -101,4 +100,4 @@ const ProfileTeacher = ({
   </VStack>
 );
 
-export default memo(ProfileTeacher);
+export default ProfileTeacher;

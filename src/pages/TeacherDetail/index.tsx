@@ -17,20 +17,20 @@ const TeacherDetail = () => {
   const id = useParams().id || '';
   const { teacher } = useGetTeacher(id);
   const {
-    address,
-    phone,
-    email,
-    photo,
-    firstName,
-    lastName,
-    subject,
-    degree,
-    description,
-    startEducation,
-    endEducation,
-    university,
-    schedule,
-    expertise,
+    address = '',
+    phone = '',
+    email = '',
+    photo = '',
+    firstName = '',
+    lastName = '',
+    subject = '',
+    degree = '',
+    description = '',
+    startEducation = '',
+    endEducation = '',
+    university = '',
+    schedule = [],
+    expertise = '',
   } = teacher?.data || {};
 
   return (
@@ -55,9 +55,7 @@ const TeacherDetail = () => {
           university={university}
           expertise={expertise}
         />
-      </Suspense>
 
-      <Suspense fallback={<Fallback />}>
         <ScheduleTeacher schedules={schedule} />
       </Suspense>
     </HStack>

@@ -1,4 +1,6 @@
+import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // Components
 import StudentForm from '..';
@@ -7,9 +9,14 @@ import StudentForm from '..';
 import { MOCK_STUDENTS } from '@/__mocks__';
 
 // Hooks
-import { useGetStudent } from '@/hooks';
+import { useGetStudent, useUploadImage } from '@/hooks';
+
+const client = new QueryClient();
+
+const mockHandleUploadImage = jest.fn();
 
 jest.mock('@/hooks', () => ({
+  useUploadImage: jest.fn(),
   useGetStudent: jest.fn(() => ({
     student: MOCK_STUDENTS[0],
     isStudentLoading: false,
@@ -17,8 +24,24 @@ jest.mock('@/hooks', () => ({
 }));
 
 describe('StudentForm', () => {
+  beforeEach(() => {
+    (useUploadImage as jest.Mock).mockReturnValue({
+      handleUploadImage: mockHandleUploadImage,
+    });
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should render successfully', () => {
-    const { container } = render(<StudentForm />);
+    const { container } = render(
+      <BrowserRouter>
+        <QueryClientProvider client={client}>
+          <StudentForm />
+        </QueryClientProvider>
+      </BrowserRouter>,
+    );
 
     expect(container).toMatchSnapshot();
   });
@@ -29,7 +52,13 @@ describe('StudentForm', () => {
       isStudentLoading: true,
     });
 
-    const { container } = render(<StudentForm />);
+    const { container } = render(
+      <BrowserRouter>
+        <QueryClientProvider client={client}>
+          <StudentForm />
+        </QueryClientProvider>
+      </BrowserRouter>,
+    );
 
     expect(container).toBeInTheDocument();
   });

@@ -29,7 +29,6 @@ import { ITeacher, ITeachers } from '@/types';
 import {
   DEFAULT_PAGE,
   ERROR_MESSAGES,
-  PAGE_SIZE,
   SUCCESS_MESSAGES,
   TOAST_STATUS,
 } from '@/constants';
@@ -127,9 +126,9 @@ const ListTeachers = () => {
   const handleClickDeleteButton = useCallback(
     (e: MouseEvent<HTMLElement>) => {
       const target = e.currentTarget as HTMLElement;
-      const { id, email } = target.dataset;
+      const { id, name } = target.dataset;
 
-      actionItem.current = { id, email } as ITeacher;
+      actionItem.current = { id, name } as ITeacher;
       onOpen();
     },
     [onOpen],
@@ -147,7 +146,7 @@ const ListTeachers = () => {
         {optimisticTeachers?.data.length === 0 ? (
           ERROR_MESSAGES.EMPTY_DATA
         ) : (
-          <Flex w="full" gap={10} flexWrap="wrap" justifyContent="flex-start">
+          <Flex w="full" gap={6} flexWrap="wrap" justifyContent="flex-start">
             {optimisticTeachers?.data.map(
               ({
                 id,
@@ -179,7 +178,6 @@ const ListTeachers = () => {
             isDisableNext={isDisableNext}
             isDisabledPrev={isDisablePrev}
             totalRecords={`${optimisticTeachers?.meta?.pagination?.total ?? 0} items`}
-            pageSize={PAGE_SIZE}
             currentButtons={pageArray}
             currentPage={currentPage}
             onClickPage={handleChangePageNumber}
@@ -194,7 +192,7 @@ const ListTeachers = () => {
         body={
           <ConfirmModal
             title="Are you sure you want to delete this teacher?"
-            itemName={actionItem.current?.email}
+            itemName={actionItem.current?.name}
             isLoading={isDeleteLoading || isPending}
             isDisabled={isDeleteLoading || isPending}
             onConfirm={handleConfirmDelete}

@@ -44,7 +44,7 @@ exports[`Student should render successfully 1`] = `
         >
           <select
             aria-label="Sort"
-            class="chakra-select css-1rrco7x"
+            class="chakra-select css-103q5vy"
           >
             <option
               selected=""
@@ -213,8 +213,9 @@ exports[`Student should render successfully 1`] = `
                 <td
                   class="css-1g7ry2m"
                 >
-                  <div
+                  <a
                     class="css-19rjtd3"
+                    href="/students/undefined"
                   >
                     <span
                       class="chakra-avatar css-wbs104"
@@ -230,7 +231,7 @@ exports[`Student should render successfully 1`] = `
                     John
                      
                     Doe
-                  </div>
+                  </a>
                 </td>
                 <td
                   class="css-1g7ry2m"
@@ -257,9 +258,7 @@ exports[`Student should render successfully 1`] = `
                   <p
                     class="chakra-text css-jj5ofg"
                   >
-                    John
-                     
-                    Doe
+                    John Doe
                   </p>
                 </td>
                 <td
@@ -393,9 +392,9 @@ exports[`Student should render successfully 1`] = `
                       </a>
                       <button
                         class="chakra-menu__menuitem css-1f187mo"
-                        data-email="u0XbI@example.com"
                         data-id="undefined"
                         data-index="2"
+                        data-name="John Doe"
                         id="menu-list-:r6:-menuitem-:r9:"
                         role="menuitem"
                         tabindex="-1"
@@ -413,8 +412,9 @@ exports[`Student should render successfully 1`] = `
                 <td
                   class="css-1g7ry2m"
                 >
-                  <div
+                  <a
                     class="css-19rjtd3"
+                    href="/students/undefined"
                   >
                     <span
                       class="chakra-avatar css-wbs104"
@@ -430,7 +430,7 @@ exports[`Student should render successfully 1`] = `
                     Davis
                      
                     Ngo
-                  </div>
+                  </a>
                 </td>
                 <td
                   class="css-1g7ry2m"
@@ -457,9 +457,7 @@ exports[`Student should render successfully 1`] = `
                   <p
                     class="chakra-text css-jj5ofg"
                   >
-                    Davis
-                     
-                    Ngo
+                    Davis Ngo
                   </p>
                 </td>
                 <td
@@ -593,9 +591,9 @@ exports[`Student should render successfully 1`] = `
                       </a>
                       <button
                         class="chakra-menu__menuitem css-1f187mo"
-                        data-email="u0XbI@example.com"
                         data-id="undefined"
                         data-index="2"
+                        data-name="Davis Ngo"
                         id="menu-list-:rf:-menuitem-:ri:"
                         role="menuitem"
                         tabindex="-1"
@@ -613,8 +611,9 @@ exports[`Student should render successfully 1`] = `
                 <td
                   class="css-1g7ry2m"
                 >
-                  <div
+                  <a
                     class="css-19rjtd3"
+                    href="/students/undefined"
                   >
                     <span
                       class="chakra-avatar css-wbs104"
@@ -630,7 +629,7 @@ exports[`Student should render successfully 1`] = `
                     Jonathan
                      
                     Tah
-                  </div>
+                  </a>
                 </td>
                 <td
                   class="css-1g7ry2m"
@@ -657,9 +656,7 @@ exports[`Student should render successfully 1`] = `
                   <p
                     class="chakra-text css-jj5ofg"
                   >
-                    Jonathan
-                     
-                    Tah
+                    Jonathan Tah
                   </p>
                 </td>
                 <td
@@ -793,9 +790,9 @@ exports[`Student should render successfully 1`] = `
                       </a>
                       <button
                         class="chakra-menu__menuitem css-1f187mo"
-                        data-email="u0XbI@example.com"
                         data-id="undefined"
                         data-index="2"
+                        data-name="Jonathan Tah"
                         id="menu-list-:ro:-menuitem-:rr:"
                         role="menuitem"
                         tabindex="-1"
@@ -813,8 +810,9 @@ exports[`Student should render successfully 1`] = `
                 <td
                   class="css-1g7ry2m"
                 >
-                  <div
+                  <a
                     class="css-19rjtd3"
+                    href="/students/undefined"
                   >
                     <span
                       class="chakra-avatar css-wbs104"
@@ -830,7 +828,7 @@ exports[`Student should render successfully 1`] = `
                     Edward
                      
                     Johnson
-                  </div>
+                  </a>
                 </td>
                 <td
                   class="css-1g7ry2m"
@@ -857,9 +855,7 @@ exports[`Student should render successfully 1`] = `
                   <p
                     class="chakra-text css-jj5ofg"
                   >
-                    Edward
-                     
-                    Johnson
+                    Edward Johnson
                   </p>
                 </td>
                 <td
@@ -993,9 +989,9 @@ exports[`Student should render successfully 1`] = `
                       </a>
                       <button
                         class="chakra-menu__menuitem css-1f187mo"
-                        data-email="u0XbI@example.com"
                         data-id="undefined"
                         data-index="2"
+                        data-name="Edward Johnson"
                         id="menu-list-:r11:-menuitem-:r14:"
                         role="menuitem"
                         tabindex="-1"
@@ -1013,8 +1009,9 @@ exports[`Student should render successfully 1`] = `
                 <td
                   class="css-1g7ry2m"
                 >
-                  <div
+                  <a
                     class="css-19rjtd3"
+                    href="/students/undefined"
                   >
                     <span
                       class="chakra-avatar css-wbs104"
@@ -1030,7 +1027,7 @@ exports[`Student should render successfully 1`] = `
                     William
                      
                     Smith
-                  </div>
+                  </a>
                 </td>
                 <td
                   class="css-1g7ry2m"
@@ -1057,9 +1054,7 @@ exports[`Student should render successfully 1`] = `
                   <p
                     class="chakra-text css-jj5ofg"
                   >
-                    William
-                     
-                    Smith
+                    William Smith
                   </p>
                 </td>
                 <td
@@ -1193,9 +1188,9 @@ exports[`Student should render successfully 1`] = `
                       </a>
                       <button
                         class="chakra-menu__menuitem css-1f187mo"
-                        data-email="u0XbI@example.com"
                         data-id="undefined"
                         data-index="2"
+                        data-name="William Smith"
                         id="menu-list-:r1a:-menuitem-:r1d:"
                         role="menuitem"
                         tabindex="-1"

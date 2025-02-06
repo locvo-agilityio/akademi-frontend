@@ -21,7 +21,7 @@ import {
   useToast,
   VStack,
 } from '@chakra-ui/react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 // Components
 import {
@@ -48,7 +48,6 @@ import {
   CLASS_NAME,
   DEFAULT_PAGE,
   ERROR_MESSAGES,
-  PAGE_SIZE,
   PUBLIC_ROUTERS,
   SUCCESS_MESSAGES,
   TOAST_STATUS,
@@ -123,9 +122,9 @@ const TableStudents = () => {
   const handleClickDeleteButton = useCallback(
     (e: MouseEvent<HTMLElement>) => {
       const target = e.currentTarget as HTMLElement;
-      const { id, email } = target.dataset;
+      const { id, name } = target.dataset;
 
-      actionItem.current = { id, email } as IStudent;
+      actionItem.current = { id, name } as IStudent;
       onOpen();
     },
     [onOpen],
@@ -174,8 +173,18 @@ const TableStudents = () => {
       {
         title: 'Name',
         key: 'name',
-        renderBody: ({ firstName, lastName, avatar }: TDataSource) => (
+        renderBody: ({
+          firstName,
+          lastName,
+          avatar,
+          documentId,
+        }: TDataSource) => (
           <Flex
+            as={Link}
+            to={PUBLIC_ROUTERS.STUDENT_DETAIL.replace(
+              ':id',
+              String(documentId),
+            )}
             p={0}
             gap={4}
             border="none"
@@ -221,10 +230,8 @@ const TableStudents = () => {
       {
         title: 'Parent Name',
         key: 'parentName',
-        renderBody: ({ firstName, lastName }: TDataSource) => (
-          <Text color="darkBlue">
-            {firstName} {lastName}
-          </Text>
+        renderBody: ({ parentName }: TDataSource) => (
+          <Text color="darkBlue">{parentName}</Text>
         ),
       },
       {
@@ -286,9 +293,9 @@ const TableStudents = () => {
       {
         title: 'Action',
         key: 'action',
-        renderBody: ({ documentId, email }: TDataSource) => (
+        renderBody: ({ documentId, firstName, lastName }: TDataSource) => (
           <Dropdown
-            email={String(email)}
+            name={`${firstName} ${lastName}`}
             documentId={String(documentId)}
             path={PUBLIC_ROUTERS.STUDENT_DETAIL.replace(
               ':id',
@@ -298,6 +305,7 @@ const TableStudents = () => {
               ':id',
               String(documentId),
             )}
+            isStudent={true}
             onOpenDeleteModal={handleClickDeleteButton}
           />
         ),
@@ -330,7 +338,6 @@ const TableStudents = () => {
           isDisableNext={isDisableNext}
           isDisabledPrev={isDisablePrev}
           totalRecords={`${students?.meta?.pagination?.total ?? 0} items`}
-          pageSize={PAGE_SIZE}
           currentButtons={pageArray}
           currentPage={currentPage}
           onClickPage={handleChangePageNumber}
@@ -344,7 +351,7 @@ const TableStudents = () => {
         body={
           <ConfirmModal
             title="Are you sure you want to delete this student?"
-            itemName={actionItem.current?.email}
+            itemName={actionItem.current?.name}
             isLoading={isDeleteLoading || isPending}
             isDisabled={isDeleteLoading || isPending}
             onConfirm={handleConfirmDelete}

@@ -26,6 +26,9 @@ import {
 
 // Constants
 import {
+  ADDITIONAL_PARENT_STUDENT_INFO,
+  BASIC_PARENT_STUDENT_INFO,
+  BASIC_STUDENT_INFO,
   CLASS_NAME,
   CLASS_NAME_OPTIONS,
   ERROR_MESSAGES,
@@ -38,13 +41,6 @@ import {
 
 // Types
 import { IStudent } from '@/types';
-
-// Utils
-import {
-  ADDITIONAL_PARENT_STUDENT_INFO,
-  BASIC_PARENT_STUDENT_INFO,
-  BASIC_STUDENT_INFO,
-} from '@/utils';
 
 // Actions
 import { addStudent, editStudent } from '@/actions';
@@ -337,7 +333,8 @@ const StudentForm = ({ defaultValues }: IStudentFormProps) => {
                     value={value}
                     size="sm"
                     display="flex"
-                    gap={10}
+                    flexDirection={{ base: 'column', xl: 'row' }}
+                    gap={{ base: 4, xl: 10 }}
                   >
                     {CLASS_NAME_OPTIONS.map((option) => (
                       <Radio

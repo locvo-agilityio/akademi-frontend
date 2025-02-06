@@ -10,6 +10,7 @@ import {
 
 // Constants
 import { studentsQueryKeys } from '@/constants';
+import { IStudent, IStudents } from '@/types';
 
 export const useGetUnpaidStudents = ({ page }: { page: number }) => {
   const { data: unpaidStudents, isFetching: isUnpaidStudentsLoading } =
@@ -38,10 +39,22 @@ export const useGetStudents = ({
 
 export const useGetStudent = (id: string) => {
   const queryClient = useQueryClient();
+
+  const cachedStudents = queryClient.getQueriesData({
+    queryKey: studentsQueryKeys.lists(),
+  });
+
+  const allStudents = cachedStudents.flatMap(([_, data]) => data ?? []);
+
+  const initialStudents = (allStudents[0] as IStudents)?.data.find(
+    (student) => student.documentId === id,
+  );
+
   const { data: student, isFetching: isStudentLoading } = useQuery({
     queryKey: studentsQueryKeys.detail(id),
     queryFn: getStudent,
-    initialData: () => queryClient.getQueryData([studentsQueryKeys.detail(id)]),
+    enabled: !!id,
+    placeholderData: { data: initialStudents as IStudent },
   });
 
   return { student, isStudentLoading };

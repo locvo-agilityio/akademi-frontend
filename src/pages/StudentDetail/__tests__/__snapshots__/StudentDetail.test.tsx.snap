@@ -76,7 +76,7 @@ exports[`StudentDetail should render successfully 1`] = `
                     <p
                       class="chakra-text css-cif1vy"
                     >
-                      January 24, 2025
+                      February 6, 2025
                     </p>
                   </td>
                   <td
@@ -133,7 +133,7 @@ exports[`StudentDetail should render successfully 1`] = `
                     <p
                       class="chakra-text css-cif1vy"
                     >
-                      January 24, 2025
+                      February 6, 2025
                     </p>
                   </td>
                   <td
@@ -190,7 +190,7 @@ exports[`StudentDetail should render successfully 1`] = `
                     <p
                       class="chakra-text css-cif1vy"
                     >
-                      January 24, 2025
+                      February 6, 2025
                     </p>
                   </td>
                   <td
@@ -247,7 +247,7 @@ exports[`StudentDetail should render successfully 1`] = `
                     <p
                       class="chakra-text css-cif1vy"
                     >
-                      January 24, 2025
+                      February 6, 2025
                     </p>
                   </td>
                   <td
