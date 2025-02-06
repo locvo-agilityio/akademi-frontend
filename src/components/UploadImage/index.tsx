@@ -8,16 +8,22 @@ import {
   FormLabel,
   Input,
   Text,
+  useToast,
   VStack,
 } from '@chakra-ui/react';
 import { Controller, useForm } from 'react-hook-form';
 import { useCallback, useMemo, useRef, useState, useTransition } from 'react';
 
 // Components
-import { Fallback } from '@/components';
+import { CustomToast, Fallback } from '@/components';
 
 // Constants
-import { VALIDATION_RULES } from '@/constants';
+import {
+  ERROR_MESSAGES,
+  SUCCESS_MESSAGES,
+  TOAST_STATUS,
+  VALIDATION_RULES,
+} from '@/constants';
 
 // Types
 import { IFile } from '@/types';
@@ -32,6 +38,7 @@ interface IUploadImageProps {
 
 const UploadImage = ({ imageUrl = '', onFileChange }: IUploadImageProps) => {
   const { handleUploadImage } = useUploadImage();
+  const toast = useToast();
   const [selectedImageUrl, setSelectedImageUrl] = useState<string | null>(
     imageUrl,
   );
@@ -56,21 +63,41 @@ const UploadImage = ({ imageUrl = '', onFileChange }: IUploadImageProps) => {
 
   const handleUploadFile = useCallback(
     async (file: File) => {
-      const isValid = await trigger('image');
+      try {
+        const isValid = await trigger('image');
 
-      if (isValid) {
-        startTransition(async () => {
-          const imageUrl = await handleUploadImage(file);
+        if (isValid) {
+          startTransition(async () => {
+            const imageUrl = await handleUploadImage(file);
 
-          startTransition(() => {
-            setSelectedImageUrl(imageUrl);
-            onFileChange(imageUrl);
-            clearErrors('image');
+            startTransition(() => {
+              setSelectedImageUrl(imageUrl);
+              onFileChange(imageUrl);
+              clearErrors('image');
+
+              toast({
+                render: () => (
+                  <CustomToast
+                    status={TOAST_STATUS.SUCCESS}
+                    message={SUCCESS_MESSAGES.UPLOAD_IMAGE_SUCCESS}
+                  />
+                ),
+              });
+            });
           });
+        }
+      } catch (error) {
+        toast({
+          render: () => (
+            <CustomToast
+              status={TOAST_STATUS.ERROR}
+              message={ERROR_MESSAGES.UPLOAD_IMAGE_FAILED}
+            />
+          ),
         });
       }
     },
-    [clearErrors, handleUploadImage, onFileChange, trigger],
+    [clearErrors, handleUploadImage, onFileChange, toast, trigger],
   );
 
   const handleFileChange = useCallback(

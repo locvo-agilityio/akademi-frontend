@@ -23,4 +23,5 @@ export const SUCCESS_MESSAGES = {
   DELETE_TEACHER_SUCCESS: 'Delete teacher successfully',
   EDIT_TEACHER_SUCCESS: 'Edit teacher successfully',
   EDIT_STUDENT_SUCCESS: 'Edit student successfully',
+  UPLOAD_IMAGE_SUCCESS: 'Upload image successfully',
 };
