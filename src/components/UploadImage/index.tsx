@@ -69,10 +69,11 @@ const UploadImage = ({ imageUrl = '', onFileChange }: IUploadImageProps) => {
         if (isValid) {
           startTransition(async () => {
             const imageUrl = await handleUploadImage(file);
+            const baseImageUrl = URL.createObjectURL(file);
 
             startTransition(() => {
-              setSelectedImageUrl(imageUrl);
-              onFileChange(imageUrl);
+              setSelectedImageUrl(imageUrl || baseImageUrl);
+              onFileChange(imageUrl || baseImageUrl);
               clearErrors('image');
 
               toast({
