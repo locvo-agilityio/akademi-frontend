@@ -1,2 +1,0 @@
-cd ./akademi
-npx lint-staged
