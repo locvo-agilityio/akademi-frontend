@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextareaField component render correctly with default props 1`] = `
+<div>
+  <div
+    class="chakra-form-control css-0"
+    role="group"
+  >
+    <label
+      class="chakra-form__label css-1hm3o85"
+      for="field-:r0:"
+      id="field-:r0:-label"
+    >
+      Description
+       *
+    </label>
+    <textarea
+      class="chakra-textarea css-0"
+      id="field-:r0:"
+      name="description"
+      placeholder="Description"
+    />
+  </div>
+</div>
+`;
+
+exports[`TextareaField component render correctly with error message 1`] = `
+<div>
+  <div
+    class="chakra-form-control css-0"
+    data-invalid=""
+    role="group"
+  >
+    <label
+      class="chakra-form__label css-1ooge5m"
+      data-invalid=""
+      for="field-:r1:"
+      id="field-:r1:-label"
+    >
+      Description
+       *
+    </label>
+    <textarea
+      aria-describedby="field-:r1:-feedback"
+      aria-invalid="true"
+      class="chakra-textarea css-0"
+      id="field-:r1:"
+      name="description"
+      placeholder="Description"
+    />
+    <div
+      aria-live="polite"
+      class="chakra-form__error-message css-15e0ffo"
+      id="field-:r1:-feedback"
+    >
+      Field is required
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,2 @@
+cd ./akademi
+pnpm test -- -u && pnpm build

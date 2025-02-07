@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeacherForm should render successfully 1`] = `
+<div>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    class="chakra-stack css-1d0q5nm"
+  >
+    <div
+      class="chakra-stack css-9m3hkh"
+    >
+      <h3
+        class="chakra-text css-ux3uq4"
+      >
+        Personal Details
+      </h3>
+      <div
+        class="chakra-stack css-es5q0n"
+      >
+        <div
+          class="css-tfo7n4"
+        >
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r0:"
+              id="field-:r0:-label"
+            >
+              First Name *
+            </label>
+            <input
+              aria-label="firstName"
+              class="chakra-input css-1lx593h"
+              id="field-:r0:"
+              name="firstName"
+              placeholder="Please enter your first name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r1:"
+              id="field-:r1:-label"
+            >
+              Email *
+            </label>
+            <input
+              aria-label="email"
+              class="chakra-input css-1lx593h"
+              id="field-:r1:"
+              name="email"
+              placeholder="Please enter your email"
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r2:"
+              id="field-:r2:-label"
+            >
+              Address
+               *
+            </label>
+            <textarea
+              aria-label="address"
+              class="chakra-textarea css-wugvdb"
+              id="field-:r2:"
+              name="address"
+              placeholder="Please enter your address"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r3:"
+              id="field-:r3:-label"
+            >
+              Date of Birth *
+            </label>
+            <input
+              aria-label="birthday"
+              class="chakra-input css-1lx593h"
+              id="field-:r3:"
+              max="2000-12-31"
+              min="1970-12-31"
+              name="birthday"
+              placeholder="Please enter your birthday"
+              type="date"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r4:"
+              id="field-:r4:-label"
+            >
+              Subject
+            </label>
+            <input
+              aria-label="subject"
+              class="chakra-input css-1lx593h"
+              id="field-:r4:"
+              name="subject"
+              placeholder="Please enter your subject"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r5:"
+              id="field-:r5:-label"
+            >
+              Description
+               *
+            </label>
+            <textarea
+              aria-label="description"
+              class="chakra-textarea css-wugvdb"
+              id="field-:r5:"
+              name="description"
+              placeholder="Please enter your description"
+            />
+          </div>
+        </div>
+        <div
+          class="css-tfo7n4"
+        >
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r6:"
+              id="field-:r6:-label"
+            >
+              Last Name *
+            </label>
+            <input
+              aria-label="lastName"
+              class="chakra-input css-1lx593h"
+              id="field-:r6:"
+              name="lastName"
+              placeholder="Please enter your last name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r7:"
+              id="field-:r7:-label"
+            >
+              Phone *
+            </label>
+            <input
+              aria-label="phone"
+              class="chakra-input css-1lx593h"
+              id="field-:r7:"
+              name="phone"
+              placeholder="(xxx) xxx-xxxx"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-stack css-enj3l8"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+            >
+              Photo *
+            </label>
+            <div
+              class="css-9t9a43"
+            >
+              <p
+                class="chakra-text css-144ed6u"
+              >
+                Drag and drop or click here to select file
+              </p>
+              <div
+                class="chakra-form-control css-0"
+                role="group"
+              >
+                <input
+                  accept="image/*"
+                  class="chakra-input css-13rbvqk"
+                  hidden=""
+                  id="field-:r8:"
+                  title="Upload Image"
+                  type="file"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:r9:"
+              id="field-:r9:-label"
+            >
+              Place of Birth *
+            </label>
+            <input
+              aria-label="city"
+              class="chakra-input css-1lx593h"
+              id="field-:r9:"
+              name="city"
+              placeholder="Please enter your city"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:ra:"
+              id="field-:ra:-label"
+            >
+              Expertise *
+            </label>
+            <input
+              aria-label="expertise"
+              class="chakra-input css-1lx593h"
+              id="field-:ra:"
+              name="expertise"
+              placeholder="Please enter your expertise"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="chakra-stack css-9m3hkh"
+    >
+      <h3
+        class="chakra-text css-ux3uq4"
+      >
+        Education
+      </h3>
+      <div
+        class="chakra-stack css-es5q0n"
+      >
+        <div
+          class="css-tfo7n4"
+        >
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:rb:"
+              id="field-:rb:-label"
+            >
+              University *
+            </label>
+            <input
+              aria-label="university"
+              class="chakra-input css-1lx593h"
+              id="field-:rb:"
+              name="university"
+              placeholder="Please enter your university"
+              value=""
+            />
+          </div>
+          <div
+            class="css-vypz0o"
+          >
+            <div
+              class="chakra-form-control css-0"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1hm3o85"
+                for="field-:rc:"
+                id="field-:rc:-label"
+              >
+                Start & End Date *
+              </label>
+              <input
+                aria-label="birthday"
+                class="chakra-input css-1lx593h"
+                id="field-:rc:"
+                name="startEducation"
+                placeholder="Please enter your start education"
+                type="date"
+                value=""
+              />
+            </div>
+            <div
+              class="chakra-form-control css-0"
+              role="group"
+            >
+              <input
+                aria-label="city"
+                class="chakra-input css-1lx593h"
+                id="field-:rd:"
+                name="endEducation"
+                placeholder="Please enter your end education"
+                title="End Date"
+                type="date"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-tfo7n4"
+        >
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:re:"
+              id="field-:re:-label"
+            >
+              Degree *
+            </label>
+            <input
+              aria-label="degree"
+              class="chakra-input css-1lx593h"
+              id="field-:re:"
+              name="degree"
+              placeholder="Please enter your degree"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-1hm3o85"
+              for="field-:rf:"
+              id="field-:rf:-label"
+            >
+              City *
+            </label>
+            <input
+              aria-label="cityEducation"
+              class="chakra-input css-1lx593h"
+              id="field-:rf:"
+              name="cityEducation"
+              placeholder="Please enter your city"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="chakra-stack css-lu0tkq"
+    >
+      <a
+        class="chakra-button css-193qlt7"
+        href="/teachers"
+      >
+        Cancel
+      </a>
+      <button
+        class="chakra-button css-193qlt7"
+        disabled=""
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+`;

@@ -1,0 +1,566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StudentForm renders snapshot with default values 1`] = `
+<div>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    class="chakra-stack css-135x7u7"
+  >
+    <div
+      class="chakra-stack css-1fjucff"
+    >
+      <h3
+        class="chakra-text css-c1j1q0"
+      >
+        Student Details
+      </h3>
+      <div
+        class="chakra-stack css-r71kai"
+      >
+        <div
+          class="chakra-stack css-enj3l8"
+        >
+          <label
+            class="chakra-form__label css-11rkuxk"
+          >
+            Photo *
+          </label>
+          <div
+            class="css-ptxt6o"
+          >
+            <p
+              class="chakra-text css-144ed6u"
+            >
+              Drag and drop or click here to select file
+            </p>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <input
+                accept="image/*"
+                class="chakra-input css-1k7fsj"
+                hidden=""
+                id="field-:r0:"
+                title="Upload Image"
+                type="file"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-idd5nh"
+        >
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r1:"
+              id="field-:r1:-label"
+            >
+              First Name *
+            </label>
+            <input
+              aria-label="first name"
+              class="chakra-input css-172mybz"
+              id="field-:r1:"
+              name="firstName"
+              placeholder="Please enter your first name"
+              value="Johnny "
+            />
+          </div>
+          <div
+            class="css-kd4nig"
+          >
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-11rkuxk"
+                for="field-:r2:"
+                id="field-:r2:-label"
+              >
+                Date & Place of Birth *
+              </label>
+              <input
+                aria-label="birthday"
+                class="chakra-input css-172mybz"
+                id="field-:r2:"
+                max="2009-12-31"
+                name="birthday"
+                placeholder="Please enter your birthday"
+                type="date"
+                value="1999-03-25"
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <input
+                aria-label="city"
+                class="chakra-input css-172mybz"
+                id="field-:r3:"
+                name="city"
+                placeholder="Please enter your city"
+                value="Jakarta"
+              />
+            </div>
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r4:"
+              id="field-:r4:-label"
+            >
+              Email *
+            </label>
+            <input
+              aria-label="email"
+              class="chakra-input css-172mybz"
+              id="field-:r4:"
+              name="email"
+              placeholder="Please enter your email"
+              type="email"
+              value="john.doe@example.com"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r5:"
+              id="field-:r5:-label"
+            >
+              Address
+               *
+            </label>
+            <textarea
+              aria-label="address"
+              class="chakra-textarea css-1y43o19"
+              id="field-:r5:"
+              name="address"
+              placeholder="Please enter your address"
+            >
+              Jakarta
+            </textarea>
+          </div>
+        </div>
+        <div
+          class="css-idd5nh"
+        >
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r6:"
+              id="field-:r6:-label"
+            >
+              Last Name *
+            </label>
+            <input
+              aria-label="lastName"
+              class="chakra-input css-172mybz"
+              id="field-:r6:"
+              name="lastName"
+              placeholder="Please enter your last name"
+              type="text"
+              value="Ahmad"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r7:"
+              id="field-:r7:-label"
+            >
+              Parent Name *
+            </label>
+            <input
+              aria-label="parentName"
+              class="chakra-input css-172mybz"
+              id="field-:r7:"
+              name="parentName"
+              placeholder="Please enter your parent name"
+              type="text"
+              value="John Doe"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r8:"
+              id="field-:r8:-label"
+            >
+              Phone *
+            </label>
+            <input
+              aria-label="phone"
+              class="chakra-input css-172mybz"
+              id="field-:r8:"
+              name="phone"
+              placeholder="(xxx) xxx-xxxx"
+              type="text"
+              value="2345678901"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:r9:"
+              id="field-:r9:-label"
+            >
+              Class *
+            </label>
+            <div
+              class="chakra-radio-group css-30exxc"
+              role="radiogroup"
+            >
+              <label
+                class="chakra-radio css-1cqh9jq"
+                data-checked=""
+                for="radio-:rb:"
+              >
+                <input
+                  checked=""
+                  class="chakra-radio__input"
+                  id="radio-:rb:"
+                  name="grade"
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="radio"
+                  value="VII A"
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-radio__control css-al5ct7"
+                  data-checked=""
+                />
+                <span
+                  class="chakra-radio__label css-vdbtus"
+                  data-checked=""
+                >
+                  <p
+                    class="chakra-text css-1427dgy"
+                  >
+                    VII A
+                  </p>
+                </span>
+              </label>
+              <label
+                class="chakra-radio css-1cqh9jq"
+                for="radio-:rc:"
+              >
+                <input
+                  class="chakra-radio__input"
+                  id="radio-:rc:"
+                  name="grade"
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="radio"
+                  value="VII B"
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-radio__control css-al5ct7"
+                />
+                <span
+                  class="chakra-radio__label css-vdbtus"
+                >
+                  <p
+                    class="chakra-text css-138ntzw"
+                  >
+                    VII B
+                  </p>
+                </span>
+              </label>
+              <label
+                class="chakra-radio css-1cqh9jq"
+                for="radio-:rd:"
+              >
+                <input
+                  class="chakra-radio__input"
+                  id="radio-:rd:"
+                  name="grade"
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="radio"
+                  value="VII C"
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-radio__control css-al5ct7"
+                />
+                <span
+                  class="chakra-radio__label css-vdbtus"
+                >
+                  <p
+                    class="chakra-text css-l85hjc"
+                  >
+                    VII C
+                  </p>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="chakra-stack css-1fjucff"
+    >
+      <h3
+        class="chakra-text css-c1j1q0"
+      >
+        Parent Details
+      </h3>
+      <div
+        class="chakra-stack css-r71kai"
+      >
+        <div
+          class="css-idd5nh"
+        >
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:re:"
+              id="field-:re:-label"
+            >
+              First Name *
+            </label>
+            <input
+              aria-label="firstName"
+              class="chakra-input css-172mybz"
+              id="field-:re:"
+              name="parent.firstName"
+              placeholder="Please enter your first name"
+              type="text"
+              value="John"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:rf:"
+              id="field-:rf:-label"
+            >
+              Email *
+            </label>
+            <input
+              aria-label="email"
+              class="chakra-input css-172mybz"
+              id="field-:rf:"
+              name="parent.email"
+              placeholder="Please enter your email"
+              type="email"
+              value="john.doe@example.com"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:rg:"
+              id="field-:rg:-label"
+            >
+              Address
+               *
+            </label>
+            <textarea
+              aria-label="address"
+              class="chakra-textarea css-1y43o19"
+              id="field-:rg:"
+              name="parent.address"
+              placeholder="Please enter your address"
+            >
+              Jakarta
+            </textarea>
+          </div>
+        </div>
+        <div
+          class="css-idd5nh"
+        >
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:rh:"
+              id="field-:rh:-label"
+            >
+              Last Name *
+            </label>
+            <input
+              aria-label="lastName"
+              class="chakra-input css-172mybz"
+              id="field-:rh:"
+              name="parent.lastName"
+              placeholder="Please enter your last name"
+              type="text"
+              value="Doe"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:ri:"
+              id="field-:ri:-label"
+            >
+              Phone *
+            </label>
+            <input
+              aria-label="parentPhone"
+              class="chakra-input css-172mybz"
+              id="field-:ri:"
+              name="parent.phone"
+              placeholder="(xxx) xxx-xxxx"
+              type="text"
+              value="2345678901"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-11rkuxk"
+              for="field-:rj:"
+              id="field-:rj:-label"
+            >
+              Payments *
+            </label>
+            <div
+              class="chakra-radio-group css-0"
+              role="radiogroup"
+            >
+              <div
+                class="chakra-stack css-1f0wxn3"
+              >
+                <label
+                  class="chakra-radio css-1cqh9jq"
+                  for="radio-:rl:"
+                >
+                  <input
+                    class="chakra-radio__input"
+                    id="radio-:rl:"
+                    name="payment"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="radio"
+                    value="cash"
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-radio__control css-al5ct7"
+                  />
+                  <span
+                    class="chakra-radio__label css-vdbtus"
+                  >
+                    Cash
+                  </span>
+                </label>
+                <label
+                  class="chakra-radio css-1cqh9jq"
+                  for="radio-:rm:"
+                >
+                  <input
+                    class="chakra-radio__input"
+                    id="radio-:rm:"
+                    name="payment"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="radio"
+                    value="debit"
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-radio__control css-al5ct7"
+                  />
+                  <span
+                    class="chakra-radio__label css-vdbtus"
+                  >
+                    Debit
+                  </span>
+                </label>
+                <label
+                  class="chakra-radio css-1cqh9jq"
+                  data-checked=""
+                  for="radio-:rn:"
+                >
+                  <input
+                    checked=""
+                    class="chakra-radio__input"
+                    id="radio-:rn:"
+                    name="payment"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="radio"
+                    value="unpaid"
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-radio__control css-al5ct7"
+                    data-checked=""
+                  />
+                  <span
+                    class="chakra-radio__label css-vdbtus"
+                    data-checked=""
+                  >
+                    Unpaid
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="chakra-stack css-tqtgzm"
+    >
+      <a
+        class="chakra-button css-1o2131d"
+        href="/students"
+      >
+        Cancel
+      </a>
+      <button
+        class="chakra-button css-1o2131d"
+        disabled=""
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;

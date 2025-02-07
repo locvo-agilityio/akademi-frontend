@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFood component should render correctly with default props 1`] = `
+<div>
+  <div
+    class="chakra-card css-v9162f"
+  >
+    <div
+      class="chakra-card__header css-17udfxa"
+    >
+      <div
+        class="css-6qtbr6"
+      >
+        <img
+          alt="Food Image"
+          class="chakra-image css-66zpz9"
+        />
+      </div>
+    </div>
+    <div
+      class="chakra-card__body css-1i9hxp0"
+    >
+      <p
+        class="chakra-text css-d93k4e"
+      >
+        Beef Steak with Fried Potato
+      </p>
+      <span
+        class="chakra-text css-1hmu7y7"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </span>
+    </div>
+  </div>
+</div>
+`;
