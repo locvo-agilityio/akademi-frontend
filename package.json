@@ -11,8 +11,8 @@
     "preview": "vite preview",
     "test": "jest",
     "coverage": "jest --coverage",
-    "storybook": "start-storybook -p 6006 -s public --no-open",
-    "build-storybook": "build-storybook -s public",
+    "storybook": "storybook dev -p 6006 --no-open",
+    "build-storybook": "storybook build",
     "serve-storybook": "serve storybook-static"
   },
   "dependencies": {
