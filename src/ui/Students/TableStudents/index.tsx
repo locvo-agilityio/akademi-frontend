@@ -83,6 +83,7 @@ const TableStudents = () => {
     page: currentPage,
     filter,
   });
+
   const [optimisticStudents, updateOptimisticStudents] = useOptimistic<
     OptimisticState,
     OptimisticAction

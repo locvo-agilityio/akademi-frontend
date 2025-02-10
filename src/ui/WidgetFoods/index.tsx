@@ -17,7 +17,14 @@ const WidgetFoods = () => (
         <CardFood key={item.name} {...item} />
       ))}
 
-      <Button w="full" mt={6} p={7} variant="tertiary" borderRadius="full">
+      <Button
+        w="full"
+        mt={6}
+        p={7}
+        variant="tertiary"
+        borderRadius="full"
+        cursor="not-allowed"
+      >
         View More
       </Button>
     </Flex>

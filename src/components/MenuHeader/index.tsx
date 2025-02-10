@@ -19,6 +19,7 @@ const MenuHeader = ({ name, role, avatar = '' }: MenuHeaderProps) => (
         bgColor="white"
         boxShadow="2xl"
         variant="icon"
+        cursor="not-allowed"
       >
         <Icon as={BellIcon} boxSize={8} />
       </Button>
@@ -30,6 +31,7 @@ const MenuHeader = ({ name, role, avatar = '' }: MenuHeaderProps) => (
         bgColor="white"
         boxShadow="2xl"
         variant="icon"
+        cursor="not-allowed"
       >
         <Icon as={SettingIcon} boxSize={8} />
       </Button>

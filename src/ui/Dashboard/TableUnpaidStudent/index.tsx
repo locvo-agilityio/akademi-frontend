@@ -129,6 +129,7 @@ const TableUnpaidStudent = () => {
               variant="icon"
               bgColor="transparent"
               border="none"
+              cursor="not-allowed"
             >
               <PrintIcon />
             </Button>
@@ -138,6 +139,7 @@ const TableUnpaidStudent = () => {
               variant="icon"
               bgColor="transparent"
               border="none"
+              cursor="not-allowed"
             >
               <MeatballsIcon />
             </Button>

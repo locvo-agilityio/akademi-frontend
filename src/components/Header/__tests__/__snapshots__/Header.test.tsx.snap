@@ -18,7 +18,7 @@ exports[`Header component Render correctly with default props 1`] = `
       >
         <button
           aria-label="Notification"
-          class="chakra-button css-dci4hw"
+          class="chakra-button css-jqgc5n"
           type="button"
         >
           <svg
@@ -37,7 +37,7 @@ exports[`Header component Render correctly with default props 1`] = `
         </button>
         <button
           aria-label="Settings"
-          class="chakra-button css-dci4hw"
+          class="chakra-button css-jqgc5n"
           type="button"
         >
           <svg

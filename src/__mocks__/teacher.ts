@@ -3,6 +3,8 @@ export const MOCK_TEACHERS = [
     id: 1,
     documentId: '1',
     name: 'Dimitres Viga',
+    firstName: 'Dimitres',
+    lastName: 'Viga',
     email: 'K5K3x@example.com',
     phone: '123-456-7890',
     subject: 'Mathematics',

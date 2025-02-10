@@ -320,9 +320,9 @@ exports[`Student should render successfully 1`] = `
                   class="css-1g7ry2m"
                 >
                   <div
-                    class="css-1lwo10r"
+                    class="css-1x03pat"
                   >
-                    VII A
+                    VII B
                   </div>
                 </td>
                 <td
@@ -519,9 +519,9 @@ exports[`Student should render successfully 1`] = `
                   class="css-1g7ry2m"
                 >
                   <div
-                    class="css-1lwo10r"
+                    class="css-1hq5b6t"
                   >
-                    VII A
+                    VII C
                   </div>
                 </td>
                 <td

@@ -269,7 +269,7 @@ exports[`Dashboard should render successfully 1`] = `
                   >
                     <button
                       aria-label="Print"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -309,7 +309,7 @@ exports[`Dashboard should render successfully 1`] = `
                     </button>
                     <button
                       aria-label="Options"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -415,7 +415,7 @@ exports[`Dashboard should render successfully 1`] = `
                   >
                     <button
                       aria-label="Print"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -455,7 +455,7 @@ exports[`Dashboard should render successfully 1`] = `
                     </button>
                     <button
                       aria-label="Options"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -561,7 +561,7 @@ exports[`Dashboard should render successfully 1`] = `
                   >
                     <button
                       aria-label="Print"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -601,7 +601,7 @@ exports[`Dashboard should render successfully 1`] = `
                     </button>
                     <button
                       aria-label="Options"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -707,7 +707,7 @@ exports[`Dashboard should render successfully 1`] = `
                   >
                     <button
                       aria-label="Print"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -747,7 +747,7 @@ exports[`Dashboard should render successfully 1`] = `
                     </button>
                     <button
                       aria-label="Options"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -853,7 +853,7 @@ exports[`Dashboard should render successfully 1`] = `
                   >
                     <button
                       aria-label="Print"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
@@ -893,7 +893,7 @@ exports[`Dashboard should render successfully 1`] = `
                     </button>
                     <button
                       aria-label="Options"
-                      class="chakra-button css-12tg24h"
+                      class="chakra-button css-f4cqzl"
                       type="button"
                     >
                       <svg
